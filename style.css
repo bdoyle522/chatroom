@@ -7,7 +7,10 @@ body {
   height: 95%;
   width: 100%;
   font-family: sans-serif;
-  background-image: url('http://addyosmani.com/blog/wp-content/uploads/2013/04/unicorn.jpg');
+  background-image: url('http://www.planwallpaper.com/static/images/nature-background-images2.jpg');
+  background-attachment: fixed;
+  background-image: 
+  overflow: auto;
 }
 
 .main-container {
@@ -25,6 +28,10 @@ body {
 .text-box {
   margin: 0px auto;
   width: 40%;
+}
+
+.messages-box {
+  border-color: black;
 }
 
 p{

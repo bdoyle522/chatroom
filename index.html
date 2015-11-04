@@ -11,8 +11,10 @@
       <form ng-submit="postData()">
         <input class="form-control text-box" type="text" ng-model="message" placeholder="Message">
       </form>
-      <div class="messages-container">
-        <p ng-repeat="message in messages"> {{message.text}} </p>
+      <input class="form-control text-box" ng-model="search" placeholder="Search">
+      <div class="messages-container message-box">
+        <p ng-repeat="message in messages | filter: search"> {{message.text}}<br> {{message.createdAt | date : "MM/dd/yyyy 'at' h:mma"}}</p>
+       <!--  <p ng-repeat="message in messages"> {{message.createdAt | date : "MM/dd/yyyy 'at' h:mma"}}></p> -->
       </div>
     </div>
     <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
